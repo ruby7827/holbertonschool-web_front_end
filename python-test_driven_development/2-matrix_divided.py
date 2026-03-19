@@ -23,7 +23,8 @@ def matrix_divided(matrix, div):
         [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
     """
     if (not isinstance(matrix, list) or len(matrix) == 0 or
-            not all(isinstance(row, list) and len(row) > 0 for row in matrix) or
+            not all(isinstance(row, list) and
+                    len(row) > 0 for row in matrix) or
             not all(isinstance(el, (int, float))
                     for row in matrix for el in row)):
         raise TypeError(
