@@ -22,12 +22,8 @@ class Circle(Shape):
     """A class that defines a circle."""
 
     def __init__(self, radius):
-        """Initialize a new Circle.
-
-        Args:
-            radius (float): The radius of the circle.
-        """
-        self.radius = radius
+        """Initialize a new Circle."""
+        self.radius = abs(radius)
 
     def area(self):
         """Return the area of the circle."""
@@ -42,12 +38,7 @@ class Rectangle(Shape):
     """A class that defines a rectangle."""
 
     def __init__(self, width, height):
-        """Initialize a new Rectangle.
-
-        Args:
-            width (float): The width of the rectangle.
-            height (float): The height of the rectangle.
-        """
+        """Initialize a new Rectangle."""
         self.width = width
         self.height = height
 
@@ -61,10 +52,6 @@ class Rectangle(Shape):
 
 
 def shape_info(shape):
-    """Print the area and perimeter of a shape.
-
-    Args:
-        shape (Shape): The shape to print info about.
-    """
+    """Print the area and perimeter of a shape."""
     print("Area: {}".format(shape.area()))
     print("Perimeter: {}".format(shape.perimeter()))
