@@ -41,7 +41,7 @@
 }
 
 *, *::before, *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -68,8 +68,7 @@ a[href] {
 }
 
 a:visited {
-    font-style: italic;
-    color: var(--text-color);
+  font-style: italic;
 }
 
 a:hover {
@@ -85,16 +84,16 @@ a:active {
 }
 
 .section {
-    padding: var(--section-padding);
+  padding: var(--section-padding);
 }
 
 .section-header {
-    text-align: var(--section-header-align);
-    padding: var(--section-header-padding);
+  text-align: var(--section-header-align);
+  padding: var(--section-header-padding);
 }
 
 .section-body {
-    padding: var(--section-body-padding);
+  padding: var(--section-body-padding);
 }
 
 .section-footer {
@@ -119,6 +118,7 @@ a:active {
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
+  margin: var(--section-tagline-margin);
 }
 
 .container {
@@ -160,7 +160,7 @@ a:active {
   color: var(--nav-item-link-hover);
 }
 
-.row {
+ul.row {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -182,4 +182,8 @@ a:active {
   margin: 0;
   font-size: var(--font-size-small);
   color: var(--text-color);
+}
+
+.footer ul {
+  text-align: right;
 }
