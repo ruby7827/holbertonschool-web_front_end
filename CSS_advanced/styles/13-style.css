@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700&display=swap');
-
 :root {
   --color-primary: #d73953;
   --color-black: #090909;
@@ -46,15 +45,15 @@ a[href] {
   text-decoration: none;
 }
 
-a:visited {
+a[href]:visited {
   font-style: italic;
 }
 
-a:hover {
+a[href]:hover {
   text-decoration: underline;
 }
 
-a:active {
+a[href]:active {
   background-color: var(--color-light-grey);
 }
 
